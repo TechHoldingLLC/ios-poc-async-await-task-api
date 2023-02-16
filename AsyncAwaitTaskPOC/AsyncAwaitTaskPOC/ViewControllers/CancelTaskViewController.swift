@@ -30,16 +30,8 @@ class CancelTaskViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        // Way 1
         if !(profileFetchTask?.isCancelled ?? false) {
             profileFetchTask?.cancel()
-        }
-        
-        // Way 2
-        do {
-            try Task.checkCancellation()
-        } catch {
-            print(error)
         }
     }
     

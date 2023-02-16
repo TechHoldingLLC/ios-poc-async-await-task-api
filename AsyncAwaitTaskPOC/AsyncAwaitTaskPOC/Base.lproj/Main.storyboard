@@ -129,6 +129,7 @@
                         <segue destination="yov-NR-0fN" kind="show" identifier="YieldViewController" id="KJA-tf-HrQ"/>
                         <segue destination="q0z-pk-hhq" kind="show" identifier="DetachedViewController" id="6PO-N3-RRT"/>
                         <segue destination="dJj-le-KDS" kind="show" identifier="AsyncSequenceViewController" id="wfV-1n-ZD0"/>
+                        <segue destination="8A3-Rc-jSU" kind="show" identifier="RefactorViewController" id="5Zc-RH-yuA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ciy-4x-2da" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -731,6 +732,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="873-7G-ND2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1299" y="2367"/>
+        </scene>
+        <!--Refactor View Controller-->
+        <scene sceneID="tK5-yE-lMo">
+            <objects>
+                <viewController id="8A3-Rc-jSU" customClass="RefactorViewController" customModule="AsyncAwaitTaskPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eDk-gF-fiz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDW-OM-m5T">
+                                <rect key="frame" x="169" y="432.5" width="76.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Perform"/>
+                                <connections>
+                                    <action selector="perform" destination="8A3-Rc-jSU" eventType="touchUpInside" id="oy8-oQ-nLH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gJf-dA-2we"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eDW-OM-m5T" firstAttribute="centerX" secondItem="eDk-gF-fiz" secondAttribute="centerX" id="EzA-ms-uFA"/>
+                            <constraint firstItem="eDW-OM-m5T" firstAttribute="centerY" secondItem="eDk-gF-fiz" secondAttribute="centerY" id="oml-Zq-EZZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z6b-0J-rTg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7yD-Je-uwk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1299" y="3054"/>
         </scene>
     </scenes>
     <resources>

@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView9: UIImageView!
     
     let httpClient = HTTPClient.shared
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

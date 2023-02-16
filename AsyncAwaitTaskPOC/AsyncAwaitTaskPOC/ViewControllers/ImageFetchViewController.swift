@@ -7,7 +7,7 @@
 
 import UIKit
 
-class sd: UIViewController {
+class ImageFetchViewController: UIViewController {
 
     var imageLoadTask: Task<UIImage, Error>? = nil
     

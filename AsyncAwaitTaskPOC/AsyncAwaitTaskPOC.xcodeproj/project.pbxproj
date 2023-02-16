@@ -13,7 +13,6 @@
 		D0D309D9299CEFAE008C0EA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D309D7299CEFAE008C0EA5 /* LaunchScreen.storyboard */; };
 		D0D309F0299CF048008C0EA5 /* DelayResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D309E1299CF048008C0EA5 /* DelayResponseModel.swift */; };
 		D0D309F1299CF048008C0EA5 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D309E3299CF048008C0EA5 /* HTTPClient.swift */; };
-		D0D309F2299CF048008C0EA5 /* AsyncSequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D309E5299CF048008C0EA5 /* AsyncSequenceViewController.swift */; };
 		D0D309F3299CF048008C0EA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D309E6299CF048008C0EA5 /* ViewController.swift */; };
 		D0D309F4299CF048008C0EA5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D309E7299CF048008C0EA5 /* ListViewController.swift */; };
 		D0D309F5299CF048008C0EA5 /* IndividualTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D309E8299CF048008C0EA5 /* IndividualTasksViewController.swift */; };
@@ -25,6 +24,7 @@
 		D0D309FB299CF048008C0EA5 /* YieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D309EE299CF048008C0EA5 /* YieldViewController.swift */; };
 		D0D309FC299CF048008C0EA5 /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D309EF299CF048008C0EA5 /* SleepViewController.swift */; };
 		D0D309FE299CF0E5008C0EA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D309FD299CF0E5008C0EA5 /* SceneDelegate.swift */; };
+		D0D30A00299DAB54008C0EA5 /* RefactorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D309FF299DAB54008C0EA5 /* RefactorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,6 @@
 		D0D309DA299CEFAE008C0EA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0D309E1299CF048008C0EA5 /* DelayResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayResponseModel.swift; sourceTree = "<group>"; };
 		D0D309E3299CF048008C0EA5 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		D0D309E5299CF048008C0EA5 /* AsyncSequenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncSequenceViewController.swift; sourceTree = "<group>"; };
 		D0D309E6299CF048008C0EA5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0D309E7299CF048008C0EA5 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		D0D309E8299CF048008C0EA5 /* IndividualTasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualTasksViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		D0D309EE299CF048008C0EA5 /* YieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YieldViewController.swift; sourceTree = "<group>"; };
 		D0D309EF299CF048008C0EA5 /* SleepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
 		D0D309FD299CF0E5008C0EA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D0D309FF299DAB54008C0EA5 /* RefactorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,17 +112,17 @@
 		D0D309E4299CF048008C0EA5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D0D309E5299CF048008C0EA5 /* AsyncSequenceViewController.swift */,
 				D0D309E6299CF048008C0EA5 /* ViewController.swift */,
 				D0D309E7299CF048008C0EA5 /* ListViewController.swift */,
-				D0D309E8299CF048008C0EA5 /* IndividualTasksViewController.swift */,
-				D0D309E9299CF048008C0EA5 /* DetachedViewController.swift */,
-				D0D309EA299CF048008C0EA5 /* AsyncLetViewController.swift */,
 				D0D309EB299CF048008C0EA5 /* TaskViewController.swift */,
+				D0D309E8299CF048008C0EA5 /* IndividualTasksViewController.swift */,
 				D0D309EC299CF048008C0EA5 /* CancelTaskViewController.swift */,
-				D0D309ED299CF048008C0EA5 /* ImageFetchViewController.swift */,
-				D0D309EE299CF048008C0EA5 /* YieldViewController.swift */,
 				D0D309EF299CF048008C0EA5 /* SleepViewController.swift */,
+				D0D309E9299CF048008C0EA5 /* DetachedViewController.swift */,
+				D0D309EE299CF048008C0EA5 /* YieldViewController.swift */,
+				D0D309EA299CF048008C0EA5 /* AsyncLetViewController.swift */,
+				D0D309ED299CF048008C0EA5 /* ImageFetchViewController.swift */,
+				D0D309FF299DAB54008C0EA5 /* RefactorViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -210,8 +210,8 @@
 				D0D309F9299CF048008C0EA5 /* CancelTaskViewController.swift in Sources */,
 				D0D309CD299CEFAD008C0EA5 /* AppDelegate.swift in Sources */,
 				D0D309F8299CF048008C0EA5 /* TaskViewController.swift in Sources */,
+				D0D30A00299DAB54008C0EA5 /* RefactorViewController.swift in Sources */,
 				D0D309FA299CF048008C0EA5 /* ImageFetchViewController.swift in Sources */,
-				D0D309F2299CF048008C0EA5 /* AsyncSequenceViewController.swift in Sources */,
 				D0D309F1299CF048008C0EA5 /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

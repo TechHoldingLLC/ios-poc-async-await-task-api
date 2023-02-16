@@ -8,7 +8,7 @@
 import UIKit
 
 class ListViewController: UIViewController {
-    var items: [String] = ["Task", "Individual Tasks", "Task.cancel", "Task.sleep", "Task.detached", "Task.yield", "async let & Task Group", "Async Sequence"]
+    var items: [String] = ["Task", "Individual Tasks", "Task.cancel", "Task.sleep", "Task.detached", "Task.yield", "async let & Task Group", "Refactoring Delegation Code"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +52,9 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         case "Async Sequence":
             print("Async Sequence")
             self.performSegue(withIdentifier: "AsyncSequenceViewController", sender: nil)
+        case "Refactoring Delegation Code":
+            print("Refactoring Delegation Code")
+            self.performSegue(withIdentifier: "RefactorViewController", sender: nil)
         default:
             print("Not matched!")
         }

@@ -24,7 +24,7 @@ class HTTPClient {
             }
         } .resume()
     }
-
+    
     // Asyncnronous API call with Async in a structured way
     func fetchUser() async throws -> User {
         do {
